@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "vazir";
+    src: url("../font/Vazir-Bold.ttf");
+
+    src: url("../font/Vazir-Light.ttf") format("embedded-opentype"),
+    url("../font/Vazir-Light.woff2") format("woff2"),
+    url("../font/Vazir-Light.woff") format("woff"),
+    url("../font/Vazir-Light.ttf") format("truetype"),
+
+}
+body {
+    font-family: "vazir" !important;
+   
+}
+:root {
+    --mybgcolor2:#eec170;
+    --mybgcolor1:#f2a65a;
+    --mytextcolor:#f58549;
+    --my-textcenter:#585123;
+}
+
+    
+.img-main-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-main-1:hover{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 15px;
+    background-color: var(--mytextcolor);
+    border-radius: 15px;
+    transition: all 0.5s;
+    align-items: center;
+}
+.alert-primary {
+    background-color: #C792DF;
+    padding: 10px;
+}
+.section-header:hover {
+    padding: 10px;
+    transition: all 0.5s;
+    background-color: antiquewhite;
+
+}
+.icon {
+ background-color: #cde1e3; 
+ color: #0a324f;
+ display: inline-flex;
+ padding: 15px;
+ border-radius: 15px;
+}
+  .card-item {
+    background: #254795;
+    color:white !important;
+  
+  }
+  .button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
